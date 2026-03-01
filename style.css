@@ -1,0 +1,123 @@
+/*  Curso: Análise e Desenvolvimento de Sistemas 
+    Aluno: Saulo Torres de Oliveira Assis
+    Professora: Tarciana Maria de Sena Katter 
+    Projeto: BlioBook - Ecossistema Digital para Gestão Dinâmica de Conhecimento
+*/
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 20px 0;
+    border-bottom: 2px solid #007bff;
+}
+
+header h1 {
+    color: #007bff;
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: -1.5px;
+}
+
+header p {
+    color: #1e293b;
+    margin: 8px 0 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+h3 { text-align: center; color: #333; }
+
+label { display: block; margin-top: 10px; font-weight: bold; }
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botoes { margin-top: 15px; display: flex; gap: 10px; }
+
+.botoes button {
+    flex: 1;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-salvar { background-color: #28a745; }
+.btn-salvar:hover { background-color: #218838; }
+
+.btn-cancelar { background-color: #6c757d; }
+.btn-cancelar:hover { background-color: #5a6268; }
+
+table { 
+    margin-top: 20px; 
+    border-collapse: collapse; 
+    width: 100%; 
+}
+
+th, td { 
+    padding: 12px 10px; 
+    text-align: left; 
+    border-bottom: 1px solid #eee; 
+}
+
+th { background-color: #007bff; color: white; }
+
+.acoes-container {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-acao { 
+    padding: 5px 12px; 
+    width: auto; 
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.editar { background-color: #ffc107; color: black; }
+.excluir { background-color: #dc3545; }
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .botoes { flex-direction: column; }
+    th, td { font-size: 12px; padding: 5px; }
+    header h1 { font-size: 2rem; }
+    .acoes-container { flex-direction: column; }
+}
