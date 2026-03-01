@@ -1,0 +1,151 @@
+<!--Curso: Análise e Desenvolvimento de Sistemas''
+    Aluno: Saulo Torres de Oliveira Assis
+    Professora: Tarciana Maria de Sena Katter 
+    Projeto: BlioBook - Ecossistema Digital para Gestão Dinâmica de Conhecimento-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlioBook | Gestão de Acervo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>BlioBook</h1>
+            <p>Ecossistema Digital para Gestão Dinâmica de Conhecimento</p>
+        </header>
+
+        <section class="painel-form">
+            <h3>Cadastro de Livros</h3>
+            
+            <label for="campoTitulo">Título do Livro:</label>
+            <input type="text" id="campoTitulo" placeholder="Ex: Dom Casmurro">
+
+            <label for="campoAutor">Autor:</label>
+            <select id="campoAutor">
+                <option value="">Selecione um autor...</option>
+                <option value="Sun Tzu">Sun Tzu</option>
+                <option value="Miguel de Cervantes">Miguel de Cervantes</option>
+                <option value="John Bunyan">John Bunyan</option>
+                <option value="Graciliano Ramos">Graciliano Ramos</option>
+                <option value="Machado de Assis">Machado de Assis</option>
+            </select>
+
+            <label for="campoCategoria">Categoria:</label>
+            <select id="campoCategoria">
+                <option value="">Selecione uma categoria...</option>
+                <option value="Estratégia">Estratégia</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Ficção">Ficção</option>
+                <option value="Regionalismo">Regionalismo</option>
+                <option value="Realismo">Realismo</option>
+                <option value="Romance">Romance</option>
+            </select>
+
+            <label for="campoSituacao">Situação:</label>
+            <select id="campoSituacao">
+                <option value="Disponível">Disponível</option>
+                <option value="Emprestado">Emprestado</option>
+                <option value="Não Disponível">Não Disponível</option>
+            </select>
+
+            <div class="botoes">
+                <button class="btn-salvar">Salvar Livro</button>
+                <button class="btn-cancelar">Limpar Campos</button>
+            </div>
+        </section>
+
+        <section class="painel-lista">
+            <h3>Livros Cadastrados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Categoria</th>
+                        <th>Situação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaCorpo">
+                    <tr>
+                        <td>1</td>
+                        <td>A Arte da Guerra</td>
+                        <td>Sun Tzu</td>
+                        <td>Estratégia</td>
+                        <td>Disponível</td>
+                        <td>
+                            <div class="acoes-container">
+                                <button class="btn-acao editar">Editar</button>
+                                <button class="btn-acao excluir">Excluir</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Dom Quixote</td>
+                        <td>Miguel de Cervantes</td>
+                        <td>Aventura</td>
+                        <td>Emprestado</td>
+                        <td>
+                            <div class="acoes-container">
+                                <button class="btn-acao editar">Editar</button>
+                                <button class="btn-acao excluir">Excluir</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>O Peregrino</td>
+                        <td>John Bunyan</td>
+                        <td>Ficção</td>
+                        <td>Disponível</td>
+                        <td>
+                            <div class="acoes-container">
+                                <button class="btn-acao editar">Editar</button>
+                                <button class="btn-acao excluir">Excluir</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Vidas Secas</td>
+                        <td>Graciliano Ramos</td>
+                        <td>Regionalismo</td>
+                        <td>Não Disponível</td>
+                        <td>
+                            <div class="acoes-container">
+                                <button class="btn-acao editar">Editar</button>
+                                <button class="btn-acao excluir">Excluir</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Memórias Póstumas de Brás Cubas</td>
+                        <td>Machado de Assis</td>
+                        <td>Realismo</td>
+                        <td>Disponível</td>
+                        <td>
+                            <div class="acoes-container">
+                                <button class="btn-acao editar">Editar</button>
+                                <button class="btn-acao excluir">Excluir</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>Desenvolvido por Saulo Torres</p>
+        </footer>
+    </main>
+
+</body>
+</html>
