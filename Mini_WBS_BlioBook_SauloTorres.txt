@@ -1,0 +1,16 @@
+Curso: Análise e Desenvolvimento de Sistemas
+Aluno: Saulo Torres de Oliveira Assis
+Professora: Tarciana Maria de Sena Katter 
+Projeto: BlioBook - Ecossistema Digital para Gestão Dinâmica de Conhecimento
+
+Mini WBS: BlioBook (Protótipo)
+
+Estruturação da Base e Persistência: Configuração do ecossistema Spring Boot e mapeamento das entidades fundamentais (Livro, Autor e Categoria) via JPA, garantindo que o banco de dados suporte toda a integridade do acervo.
+
+Desenvolvimento do Cérebro do Sistema (Back-end): Implementação das regras de negócio e dos controladores REST que vão gerir o fluxo dinâmico de empréstimos, devoluções e consultas em tempo real.
+
+Polimento da Interface e UX: Refinamento das telas em HTML5 e CSS3 que já iniciei, ajustando os elementos visuais para que a experiência de gestão seja fluida e intuitiva para o usuário final.
+
+Conexão e Orquestração de Fluxos (Integração): Desenvolvimento da camada em JavaScript utilizando Fetch API para conectar o front-end ao back-end, transformando a interface estática em um ecossistema funcional.
+
+Aplicação de Engenharia e Performance: Implementação de algoritmos de busca e ordenação otimizados para garantir que a recuperação de informações no acervo seja rápida e tecnicamente robusta, cumprindo os requisitos de Estrutura de Dados.
