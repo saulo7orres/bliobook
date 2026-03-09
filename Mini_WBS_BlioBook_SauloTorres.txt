@@ -3,14 +3,40 @@ Aluno: Saulo Torres de Oliveira Assis
 Professora: Tarciana Maria de Sena Katter 
 Projeto: BlioBook - Ecossistema Digital para Gestão Dinâmica de Conhecimento
 
-Mini WBS: BlioBook (Protótipo)
+Planejamento de Projeto: BlioBook
 
-Estruturação da Base e Persistência: Configuração do ecossistema Spring Boot e mapeamento das entidades fundamentais (Livro, Autor e Categoria) via JPA, garantindo que o banco de dados suporte toda a integridade do acervo.
+1. Sobre
 
-Desenvolvimento do Cérebro do Sistema (Back-end): Implementação das regras de negócio e dos controladores REST que vão gerir o fluxo dinâmico de empréstimos, devoluções e consultas em tempo real.
+O BlioBook nasce de uma visão de modernização: transformar acervos físicos em um ecossistema digital onde a informação flui sem interrupções. É um sistema desenhado para gerir o conhecimento de forma dinâmica, utilizando Java e Spring Boot para garantir que o controle de livros e empréstimos seja tão ágil quanto a necessidade do usuário.
 
-Polimento da Interface e UX: Refinamento das telas em HTML5 e CSS3 que já iniciei, ajustando os elementos visuais para que a experiência de gestão seja fluida e intuitiva para o usuário final.
+2. Quais as funcionalidades
 
-Conexão e Orquestração de Fluxos (Integração): Desenvolvimento da camada em JavaScript utilizando Fetch API para conectar o front-end ao back-end, transformando a interface estática em um ecossistema funcional.
+O sistema será focado em três pilares: o controle total do acervo (autores, categorias e títulos), o monitoramento em tempo real do fluxo de empréstimos e a recuperação inteligente de informações. A ideia é que a busca por um exemplar não seja apenas um filtro, mas um processo otimizado por algoritmos de performance, integrando uma interface reativa a um backend robusto.
 
-Aplicação de Engenharia e Performance: Implementação de algoritmos de busca e ordenação otimizados para garantir que a recuperação de informações no acervo seja rápida e tecnicamente robusta, cumprindo os requisitos de Estrutura de Dados.
+3. Quem vai fazer o quê
+
+A execução será integralmente conduzida por Saulo Torres. Atuarei como responsável por toda a jornada do software, desde a arquitetura e modelagem do banco de dados até o desenvolvimento da lógica de negócio e a construção da interface de usuário, garantindo a coesão entre o que o sistema processa e o que o usuário visualiza.
+
+4. Cronograma
+
+Semana 1 (Planejamento e Fundações): Definição da estrutura do banco de dados e configuração do ambiente de desenvolvimento.
+
+Semana 2 (Construção do Motor): Desenvolvimento da lógica de back-end, focando nas regras de empréstimo e persistência de dados.
+
+Semana 3 (Integração e Visibilidade): Conexão da interface ao sistema e preparação da apresentação da ideia para a primeira avaliação.
+
+Semana 4 (Refinamento e Fechamento): Ajustes de performance, correção de possíveis falhas e finalização da documentação técnica.
+
+5. O que você vai entregar
+
+A entrega consistirá no repositório completo no GitHub com o código-fonte organizado, a prova de conceito do sistema operando o fluxo básico de gestão e a documentação técnica que valida as escolhas de arquitetura feitas durante o projeto.
+
+6. Quando
+
+1ª Prova: Apresentação da proposta, escopo do problema e protótipo da ideia.
+
+2ª Prova: Entrega do sistema totalmente funcional e da documentação final.
+
+7. Qual a dor e o público-alvo
+
+O projeto foca em bibliotecas de pequeno porte e acervos escolares que ainda sofrem com a "ruptura de informação" causada por registros manuais ou sistemas obsoletos. A dor central é a perda do rastro do conhecimento: quando não se sabe onde um livro está ou quem o retirou, o patrimônio intelectual da instituição se fragiliza. O BlioBook resolve isso com rastreabilidade e agilidade.
