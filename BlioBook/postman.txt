@@ -1,0 +1,38 @@
+Método: GET
+
+URL: http://localhost:8080/livros
+
+Status: 200 OK
+
+Método: POST
+
+URL: http://localhost:8080/livros
+
+{
+    "titulo": "O Código Da Vinci",
+    "situacao": "Disponível",
+    "categoria": { "id": 3 },
+    "autores": [
+        { "id": 1 }
+    ]
+}
+
+Status: 201 Created
+
+Método: PUT
+
+URL: http://localhost:8080/livros/1
+
+{
+    "titulo": "A Arte da Guerra - Edição De Luxo",
+    "situacao": "Emprestado",
+    "categoria": { "id": 1 }
+}
+
+Status: 200 OK
+
+Método: DELETE
+
+URL: http://localhost:8080/livros/2
+
+Status: 204 No Content
