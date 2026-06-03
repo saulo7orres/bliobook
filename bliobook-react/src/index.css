@@ -1,0 +1,48 @@
+/*
+Faculdade: Faculdade Alpha
+Curso: Análise e Desenvolvimento de Sistemas
+Aluno: Saulo Torres de Oliveira Assis
+Professora: Tarciana Maria de Sena Katter
+Projeto: BlioBook - Ecossistema Digital para Gestão Dinâmica de Conhecimento
+*/
+
+@tailwind components;
+@tailwind utilities;
+
+/* Todo o seu CSS original intocável abaixo */
+:root {
+  /* Variáveis globais para tema padrão (Dark Mode) */
+  --primary-color: #1d4ed8;
+  --bg-color: #0f172a; /* Fundo azul escuro/slate original */
+  --text-color: #1e293b;
+  --card-bg: #ffffff;
+  --btn-text-color: #ffffff;
+  --border-radius: 12px;
+  --focus-outline: 3px solid #f59e0b;
+  --input-border: #cbd5e1;
+}
+
+/* Sobrescrita de variáveis para modo de Alto Contraste (WCAG 2.1 AA) */
+.high-contrast {
+  --primary-color: #ffff00;
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --card-bg: #000000;
+  --btn-text-color: #000000;
+  --focus-outline: 4px solid #00ffff;
+  --input-border: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.2s ease; /* Transição suave ao alternar temas */
+}
+
+/* Proteção global para acessibilidade: garante contorno visível em navegação por teclado */
+*:focus-visible {
+  outline: 3px solid var(--focus-outline);
+  outline-offset: 2px;
+}
