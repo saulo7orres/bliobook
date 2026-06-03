@@ -1,0 +1,54 @@
+name: Playwright Tests
+# Triggera automaticamente em push ou pull request nas branches principais
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+# Job principal que vai executar os testes
+jobs:
+  test:
+    # Tempo máximo de execução antes de timeout (evita jobs travados)
+    timeout-minutes: 60
+    # Roda em máquina Linux mais recente do GitHub Actions
+    runs-on: ubuntu-latest
+    
+    # Configurações padrão para todos os comandos deste job
+    defaults:
+      run:
+        # Aponta para a pasta do projeto React dentro do repositório
+        working-directory: bliobook-react
+    
+    steps:
+    # 1. Clona o repositório para o runner
+    - uses: actions/checkout@v4
+    
+    # 2. Configura o Node.js (versão LTS para estabilidade)
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    
+    # 3. Instala dependências do projeto de forma limpa (usa package-lock.json)
+    - name: Install dependencies
+      run: npm ci
+    
+    # 4. Baixa os browsers do Playwright + dependências do sistema (Chromium, Firefox, WebKit)
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps
+    
+    # 5. Roda os testes: inicia o servidor dev em background e executa Playwright
+    - name: Run Playwright tests
+      run: |
+        npm run dev &
+        npx playwright test
+      env:
+        CI: true  # Variável de ambiente para ativar modo CI nos testes
+    
+    # 6. Salva o relatório de testes como artifact (útil para debug de falhas)
+    - uses: actions/upload-artifact@v4
+      if: ${{ !cancelled() }}  # Só salva se o job não foi cancelado manualmente
+      with:
+        name: playwright-report
+        path: bliobook-react/playwright-report/
+        retention-days: 30  # Mantém os artifacts por 30 dias antes de limpar
